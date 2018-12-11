@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Muli-SemiBold.ttf">
+            <string>Muli-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" reuseIdentifier="ReservationCustomCell" rowHeight="58" id="gtc-Bp-0uq" customClass="ReservationCustomCell" customModule="CollapsibleTable">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gtc-Bp-0uq" id="Ggg-kh-sBP">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="57.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mih-FI-Wrz">
+                        <rect key="frame" x="0.0" y="56.5" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.80000000000000004" id="SMx-v4-NHo"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UhA-K5-fkk">
+                        <rect key="frame" x="142" y="20.5" width="37.5" height="16.5"/>
+                        <fontDescription key="fontDescription" name="Muli-SemiBold" family="Muli" pointSize="14"/>
+                        <color key="textColor" red="0.26274509800000001" green="0.26274509800000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="UhA-K5-fkk" firstAttribute="centerY" secondItem="Ggg-kh-sBP" secondAttribute="centerY" id="HbK-Jm-mgR"/>
+                    <constraint firstItem="mih-FI-Wrz" firstAttribute="leading" secondItem="Ggg-kh-sBP" secondAttribute="leading" id="cfg-fB-hNX"/>
+                    <constraint firstAttribute="bottom" secondItem="mih-FI-Wrz" secondAttribute="bottom" id="kCI-TJ-hVj"/>
+                    <constraint firstItem="UhA-K5-fkk" firstAttribute="centerX" secondItem="Ggg-kh-sBP" secondAttribute="centerX" id="laQ-Wb-JMV"/>
+                    <constraint firstAttribute="trailing" secondItem="mih-FI-Wrz" secondAttribute="trailing" id="tvN-13-WPl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="nMY-gw-dpV"/>
+            <inset key="separatorInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+            <connections>
+                <outlet property="separatorView" destination="mih-FI-Wrz" id="Z1T-JE-C7U"/>
+                <outlet property="usernameLbl" destination="UhA-K5-fkk" id="bhg-rR-V1F"/>
+            </connections>
+            <point key="canvasLocation" x="-458" y="-3"/>
+        </tableViewCell>
+    </objects>
+</document>
